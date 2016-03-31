@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER Manel Martinez <manel@nixelsolutions.com>
+MAINTAINER Abhijeet Kamble <abhijeet.kamble619@gmail.com>
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -30,7 +30,7 @@ COPY composer.phar /usr/local/bin/composer
 RUN apt-get -y install php5-xsl  mcrypt php5-mcrypt --force-yes
 RUN php5enmod mcrypt
 
-
+COPY Dockerfile /usr/
 COPY auth.json /root/.composer/
 COPY auth.json /home/jenkins/.composer/
 COPY auth.json /home/ajinkyab/.composer/
