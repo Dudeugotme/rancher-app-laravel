@@ -18,7 +18,7 @@ RUN apt-get install oracle-java8-set-default
 RUN apt-get update && \
     apt-get install -y python-software-properties software-properties-common --force-yes
 RUN apt-get update 
-RUN add-apt-repository ppa:ondrej/php5-5.6 -y 
+RUN add-apt-repository ppa:ondrej/php -y 
 RUN add-apt-repository -y ppa:gluster/glusterfs-3.5 && \
     apt-get update && \
     apt-get install -y nginx php5-fpm php5-mysql php-apc supervisor glusterfs-client curl haproxy pwgen unzip mysql-client dnsutils git --force-yes
