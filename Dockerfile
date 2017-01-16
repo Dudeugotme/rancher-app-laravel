@@ -21,7 +21,7 @@ RUN apt-get update
 RUN add-apt-repository ppa:ondrej/php -y 
 RUN add-apt-repository -y ppa:gluster/glusterfs-3.5 && \
     apt-get update && \
-    apt-get install -y nginx php5-fpm php5-mysql php-apc supervisor glusterfs-client curl haproxy pwgen unzip mysql-client dnsutils git --force-yes
+    apt-get install -y nginx php php5-fpm php5-mysql php-apc supervisor glusterfs-client curl haproxy pwgen unzip mysql-client dnsutils git --force-yes
 
 
 RUN curl -sS https://getcomposer.org/installer | php
